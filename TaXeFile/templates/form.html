@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EATax Client Registration</title>
+</head>
+<body>
+<form action="form"  method="post">
+    {% csrf_token %}
+
+<table cellpadding="7" width="80%" bgcolor="#D3D3D3" align="center" cellspacing="2">
+
+<tr>
+<td colspan="4">
+<center><font size="4"><b>Client Registration</b></font></center>
+</td>
+</tr>
+
+<tr>
+<td>First Name:</td><td><input type=text name=firstnames id="firstname" size="15" required/></td>
+<td>Last Name:</td><td><input type=text name=lastnames id="lastname" size="15" required/></td>
+</tr>
+
+<tr>
+<td>E-mail:</td><td><input type="text" name="email" id="email" size="15" required/></td>
+
+<td>MobileNo:</td><td><input id="phone" name="phone" type="tel" size="15" maxlength="10" required/></td>
+
+</tr>
+
+<tr>
+<td>Address:</td>
+<td><input type="text" name="address" id="address" size="" required/></td>
+</tr>
+
+<tr>
+<td>Sex:</td>
+<td><input type="radio" id="sex" name="sex" value="male" size="10">Male
+<input type="radio" id="sex" name="sex" value="Female" size="10">Female</td>
+</tr>
+
+<tr>
+<td>City:</td>
+<td><input type="text" name="city" id="city" size="20">
+<td>State:</td>
+<td><select id="state" name="state">
+<option value="-1" selected>select..</option>
+	<option>Andhra Pradesh</option>
+    <option>Arunachal Pradesh</option>
+    <option >Assam</option>
+    <option >Bihar</option>
+    <option >Chhattisgarh	</option>
+    <option >Delhi</option>
+    <option >Goat</option>
+    <option >Gujarat</option>
+    <option >Haryana</option>
+    <option>Himachal Pradesh</option>
+    <option >Jharkhand</option>
+    <option >Karnataka</option>
+    <option >Kerala</option>
+    <option >Madhya Pradesh</option>
+    <option >Maharashtra</option>
+    <option >Manipur</option>
+    <option>Meghalaya</option>
+    <option >Mizoram</option>
+    <option >Nagaland</option>
+    <option>Odisha</option>
+    <option >Punjab</option>
+    <option>Rajasthan</option>
+    <option >Sikkim</option>
+    <option >Tamil Nadu</option>
+    <option>Telangana</option>
+    <option>Tripura</option>
+    <option>Uttar Pradesh</option>
+    <option>Uttarakhand</option>
+    <option>West Bengal</option>
+</select></td>
+
+</tr>
+<tr>
+<td>PinCode:</td>
+<td><input type="text" name="pincode" id="pincode" size="8"></td>
+<td>DOB:</td>
+<td><input id="birthday" type="date" name="birthday" placeholder="Date of Birth"></td>
+</tr>
+
+<tr>
+<td>Aadhar No:</td>
+<td><input id="aadhar" type="text" name="aadhaar" maxlength="12" size="15">
+<input type="file" id="file" class="form-control-file border" name="file"></td>
+<td>Pan:</td>
+<td><input id="pan" type="text" name="pan" maxlength="12" size="15" required/>
+<input id="file1" type="file" class="form-control-file border" name="file"></td>
+</tr>
+
+<tr>
+<td>Account No:</td>
+<td><input id="account" type="number" name="account" maxlength="20" size="20">
+<td>IFSC Code:</td>
+<td><input id="ifsccode"  name="ifsccode" type="text" placeholder="IFSC"></td>
+</tr>
+
+<tr>
+<td>Director/ Shareholder in any company ?:</td>
+<td><input type="radio" id="text1" name="text1" value="Form1"  size="10">Yes<input type="radio" name="text" value="None1" size="10" checked>No</td>
+
+<td>Having Income more than 50 lakh ?:</td>
+<td><input type="radio" id="text2" name="text2" value="Form2"  size="10">Yes<input type="radio" name="text" value="None2" size="10" checked>No</td>
+
+</tr>
+
+<tr>
+<td>Deposited cash of Rs. 1 crore or more ?:</td>
+<td><input type="radio" id="text3" name="text3" value="Form3"  size="10">Yes<input type="radio" name="text" value="Non3" size="10" checked>No</td>
+
+<td>Expended more than Rs. 2 lakhs on foreign travel ?:</td>
+<td><input type="radio" id="text4" name="text4" value="Form3"  size="10">Yes<input type="radio" name="text" value="Non3" size="10" checked>No</td>
+
+</tr>
+
+<tr>
+<td>Spent Rs. 1 lakhs or more on electricity ?:</td>
+<td><input type="radio" id="text5" name="text5" value="Form3"  size="10">Yes<input type="radio" name="text" value="Non3" size="10" checked>No</td>
+
+</tr>
+
+<td class="center">
+   <button><a href="" class="btn btn-primary btn-user btn-block" type="submit">
+                        Next
+                    </a></button>
+</td>
+</table>
+</form>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+</body>
+</html>
