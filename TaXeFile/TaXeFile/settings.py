@@ -75,8 +75,11 @@ WSGI_APPLICATION = 'TaXeFile.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'expert',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'OPTIONS': {
+            'options': '-c search_path=django,schemas,public'
+        },
+        'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': 'expert',
         'HOST': 'localhost',

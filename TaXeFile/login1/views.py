@@ -13,4 +13,4 @@ def login1(request):
             pyautogui.alert("Worng Username or Password")
             return render(request, 'login.html')
     else:
-        return render(request, 'form.html')
+        return render(request, 'index.html')
